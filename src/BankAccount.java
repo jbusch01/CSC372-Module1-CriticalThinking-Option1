@@ -12,7 +12,7 @@ class BankAccount {
     }
 
     public void deposit(double depositAmount) {
-        balance =+ depositAmount;
+        balance += depositAmount;
     }
 
     public void withdrawal(double withdrawalAmount) {
