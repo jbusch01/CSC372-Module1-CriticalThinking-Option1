@@ -4,7 +4,7 @@ class BankAccount {
     int accountID;
     double balance;
     
-    public BankAccount(String firstName, String lastName, int accountID, double balance) {
+    public BankAccount(String firstName, String lastName, int accountID) {
        this.firstName = firstName;
        this.lastName = lastName;
        this.accountID = accountID;
