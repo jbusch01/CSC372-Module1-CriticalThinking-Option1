@@ -8,19 +8,22 @@ class BankAccount {
        this.firstName = firstName;
        this.lastName = lastName;
        this.accountID = accountID;
-       this.balance = balance;
+       this.balance = 0.0;
     }
 
     public void deposit(double depositAmount) {
-
+        balance =+ depositAmount;
     }
 
     public void withdrawal(double withdrawalAmount) {
-
+        balance -= withdrawalAmount; 
     }
 
-    public void accountSummary(String firstName, String lastName, int accountID, double balance) {
-
+    public void accountSummary() {
+        System.out.println("Account Summary:");
+        System.out.println("Name: " + firstName + " " + lastName);
+        System.out.println("Account ID: " + accountID);
+        System.out.println("Current Balance: " + balance);
     }
 
     public String getFirstName() {
