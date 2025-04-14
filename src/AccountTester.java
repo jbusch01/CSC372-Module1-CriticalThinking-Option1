@@ -1,3 +1,5 @@
+// Test Class with hardcoded user data to demonstrate BankAccount and CheckingAccount functionality
+
 public class AccountTester {
     public static void main(String[] args) {
         System.out.println("--- Testing BankAccount ---");

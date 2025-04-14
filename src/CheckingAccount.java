@@ -1,11 +1,16 @@
+// CheckingAccount subclass that inherits from BankAccount and includes a instance-specific interest rate
 public class CheckingAccount extends BankAccount {
     private double interestRate;
     private double overdraftFee = 30.0;
+
+    // Constructor for CheckingAccount
 
     public CheckingAccount(String firstName, String lastName, int accountID, double interestRate) {
         super(firstName, lastName, accountID); 
         this.interestRate = interestRate;
     }
+
+    // Withdrawal method. Includes logic for applying overdraft fee
 
     public void processWithdrawal(double amount) {
         if (getAccountBalance() - amount < 0) {
@@ -15,6 +20,8 @@ public class CheckingAccount extends BankAccount {
             withdrawal(amount);
         }
     }
+
+    // Display method that calls accountSummary from BankAccount, then adds interest rate
 
     public void displayAccountInfo() {
         accountSummary();
