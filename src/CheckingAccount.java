@@ -18,6 +18,6 @@ public class CheckingAccount extends BankAccount {
 
     public void displayAccountInfo() {
         accountSummary();
-        System.out.println("Interest Rate: " + interestRate + "%");
+        System.out.printf("Interest Rate: %.2f%%%n", interestRate);
     }
 }
