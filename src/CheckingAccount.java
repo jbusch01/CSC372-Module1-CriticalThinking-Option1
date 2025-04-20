@@ -1,4 +1,4 @@
-// CheckingAccount subclass that inherits from BankAccount and includes a instance-specific interest rate
+// CheckingAccount subclass that inherits from BankAccount and includes an instance-specific interest rate
 public class CheckingAccount extends BankAccount {
     private double interestRate;
     private double overdraftFee = 30.0;
